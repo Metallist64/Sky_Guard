@@ -1,0 +1,4 @@
+*.ipch
+/VisualStudio/bin/Debug/Urho3D.dll
+*.vsidx
+/VisualStudio/.vs/EmptyProject/FileContentIndex
