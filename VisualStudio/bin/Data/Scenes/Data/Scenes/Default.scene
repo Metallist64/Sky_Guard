@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <resource _id="1">
 	<attributes>
-		<attribute name="Elapsed Time" type="Float" value="308.556519" />
 		<attribute name="Next Node ID" type="Int" value="8" />
-		<attribute name="Next Component ID" type="Int" value="14" />
+		<attribute name="Next Component ID" type="Int" value="13" />
 	</attributes>
 	<components>
 		<component _id="1" _typeName="Octree" />
@@ -79,7 +78,6 @@
 			</attributes>
 		</component>
 		<component _id="11" _typeName="ReflectionProbeManager" />
-		<component _id="13" _typeName="Renderer2D" />
 	</components>
 	<nodes>
 		<node _id="2">
@@ -129,7 +127,11 @@
 		<node _id="5">
 			<attributes>
 				<attribute name="Name" type="String" value="Sample Cube" />
-				<attribute name="Position" type="Vector3" value="1.72859 0 0" />
+				<attribute name="Tags" type="StringVector">
+					<value>
+						<element value="0x0001" />
+					</value>
+				</attribute>
 				<attribute name="Scale" type="Vector3" value="3 3 3" />
 			</attributes>
 			<components>
@@ -145,7 +147,6 @@
 		<node _id="6">
 			<attributes>
 				<attribute name="Name" type="String" value="Ground Plane" />
-				<attribute name="Position" type="Vector3" value="0.91703 0 0" />
 				<attribute name="Scale" type="Vector3" value="7 7 7" />
 			</attributes>
 			<components>
@@ -159,19 +160,11 @@
 		</node>
 		<node _id="7">
 			<attributes>
-				<attribute name="Name" type="String" value="1" />
-				<attribute name="Position" type="Vector3" value="-8.50603 -0.359556 0" />
-				<attribute name="Rotation" type="Quaternion" value="0.967404 -0.252418 -0.005144 0.019713" />
-				<attribute name="Scale" type="Vector3" value="1.12 2.924434 8.320298" />
+				<attribute name="Name" type="String" value="Actor" />
+				<attribute name="Position" type="Vector3" value="0 0.816609 -3.866594" />
 			</attributes>
 			<components>
-				<component _id="12" _typeName="ParticleEmitter2D">
-					<attributes>
-						<attribute name="Particle Effect" type="ResourceRef" value="ParticleEffect2D;Scenes/greenspiral.pex" />
-						<attribute name="Sprite " type="ResourceRef" value="Sprite2D;Scenes/sun.png" />
-						<attribute name="Blend Mode" type="String" value="addalpha" />
-					</attributes>
-				</component>
+				<component _id="12" _typeName="Camera" />
 			</components>
 		</node>
 	</nodes>
