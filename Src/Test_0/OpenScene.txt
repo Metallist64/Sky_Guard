@@ -1,0 +1,38 @@
+Descriotion:
+Open scene "Scenes/Default.scene". Created in editor.
+In examples scene extension was "Default.xml".
+
+
+//In Scene class
+
+    SharedPtr<Scene> scene_;
+    SharedPtr<Node> actorNode_;
+    SharedPtr<Node> cameraNode_;
+ 
+ //Create scene
+ {
+	 scene_ = MakeShared<Scene>(context_);
+	 scene_->LoadFile("Scenes/Default.scene");
+	 actorNode_ = scene_->FindChild("Actor");
+	 Camera* camera =  actorNode_->FindComponent<Camera>();
+	 if (!camera)    return;
+	 cameraNode_ = camera->GetNode();
+
+	 //auto player = actorNode_->CreateComponent<PlayerController>();
+	 const auto controller = cameraNode_->CreateComponent<FreeFlyController>();
+	 controller->SetSpeed(0.0f);
+	 controller->SetAcceleratedSpeed(0.0f);
+
+	 // Create viewport.
+	 const auto viewport = MakeShared<Viewport>(context_, scene_, camera);
+	 SetViewport(0, viewport);
+}
+
+    auto* instructionText = GetUIRoot()->CreateChild<Text>();
+    instructionText->SetText("Use WASD keys and mouse/touch to move");
+    instructionText->SetFont(cache->GetResource<Font>("Fonts/Anonymous Pro.ttf"), 15);
+
+    // Position the text relative to the screen center
+    instructionText->SetHorizontalAlignment(HA_CENTER);
+    instructionText->SetVerticalAlignment(VA_CENTER);
+    instructionText->SetPosition(0, GetUIRoot()->GetHeight() / 4);
