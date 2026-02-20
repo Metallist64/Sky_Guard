@@ -1,0 +1,10 @@
+^D:\DISTR\SRC\RBFX\EMPTY-PROJECT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Distr/SRC/RbFX/empty-project -BD:/Distr/SRC/RbFX/empty-projectBase --check-stamp-file D:/Distr/SRC/RbFX/empty-projectBase/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

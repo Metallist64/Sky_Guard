@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{366C41A2-1BB9-3AB3-BDEE-F0BE9D160436}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>EmptyProject</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Distr\SRC\RbFX\empty-projectBase\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EmptyProject.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EmptyProject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Distr\SRC\RbFX\empty-projectBase\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">EmptyProject.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">EmptyProject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Distr\SRC\RbFX\empty-projectBase\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">EmptyProject.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">EmptyProject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Distr\SRC\RbFX\empty-projectBase\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">EmptyProject.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">EmptyProject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Distr/SRC/RbFX/SDK/include" /external:I "D:/Distr/SRC/RbFX/SDK/include/Urho3D" /external:I "D:/Distr/SRC/RbFX/SDK/include/SDL" /external:I "D:/Distr/SRC/RbFX/SDK/include/STB" /external:I "D:/Distr/SRC/RbFX/SDK/include/Detour" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/backends" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/misc/cpp" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/misc/freetype" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGuizmo" /external:I "D:/Distr/SRC/RbFX/SDK/include/nativefiledialog" /external:I "D:/Distr/SRC/RbFX/SDK/include/tracy" /external:I "D:/Distr/SRC/RbFX/SDK/include/Urho3D/CSharp/Swig" /external:I "D:/Distr/SRC/RbFX/SDK/include/Bullet"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);URHO3D_WIN32_CONSOLE;WIN32;_WINDOWS;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_COPY_DATA_DIRS;URHO3D_CSHARP;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_MONOLITHIC_HEADER;URHO3D_NAVIGATION;URHO3D_NETFX_RUNTIME_VERSION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PRISTINE_FULL_BUILDS;URHO3D_PROFILING;URHO3D_PROFILING_FALLBACK;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_TESTING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;_CHAR16T=1;EA_DLL=1;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE="RmlUi/Config/RbfxConfig.h";ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_DELAYED_INIT;TRACY_MANUAL_LIFETIME;TRACY_IMPORTS;URHO3D_SSE;PLATFORM_WIN32=1;BT_USE_SSE=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_COPY_DATA_DIRS;URHO3D_CSHARP;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_MONOLITHIC_HEADER;URHO3D_NAVIGATION;URHO3D_NETFX_RUNTIME_VERSION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PRISTINE_FULL_BUILDS;URHO3D_PROFILING;URHO3D_PROFILING_FALLBACK;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_TESTING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;_CHAR16T=1;EA_DLL=1;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE=\"RmlUi/Config/RbfxConfig.h\";ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_DELAYED_INIT;TRACY_MANUAL_LIFETIME;TRACY_IMPORTS;URHO3D_SSE;PLATFORM_WIN32=1;BT_USE_SSE=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;D:\Distr\SRC\RbFX\SDK\include;D:\Distr\SRC\RbFX\SDK\include\Urho3D;D:\Distr\SRC\RbFX\SDK\include\SDL;D:\Distr\SRC\RbFX\SDK\include\STB;D:\Distr\SRC\RbFX\SDK\include\Detour;D:\Distr\SRC\RbFX\SDK\include\ImGui;D:\Distr\SRC\RbFX\SDK\include\ImGui\backends;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\cpp;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\freetype;D:\Distr\SRC\RbFX\SDK\include\ImGuizmo;D:\Distr\SRC\RbFX\SDK\include\nativefiledialog;D:\Distr\SRC\RbFX\SDK\include\tracy;D:\Distr\SRC\RbFX\SDK\include\Urho3D\CSharp\Swig;D:\Distr\SRC\RbFX\SDK\include\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;D:\Distr\SRC\RbFX\SDK\include;D:\Distr\SRC\RbFX\SDK\include\Urho3D;D:\Distr\SRC\RbFX\SDK\include\SDL;D:\Distr\SRC\RbFX\SDK\include\STB;D:\Distr\SRC\RbFX\SDK\include\Detour;D:\Distr\SRC\RbFX\SDK\include\ImGui;D:\Distr\SRC\RbFX\SDK\include\ImGui\backends;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\cpp;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\freetype;D:\Distr\SRC\RbFX\SDK\include\ImGuizmo;D:\Distr\SRC\RbFX\SDK\include\nativefiledialog;D:\Distr\SRC\RbFX\SDK\include\tracy;D:\Distr\SRC\RbFX\SDK\include\Urho3D\CSharp\Swig;D:\Distr\SRC\RbFX\SDK\include\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Debug\Plugin.Core.SamplePlugin.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\Urho3D.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\openxr_loaderd.lib;advapi32.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\Bullet.lib;user32.lib;gdi32.lib;imm32.lib;version.lib;winmm.lib;setupapi.lib;ws2_32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Distr/SRC/RbFX/empty-projectBase/lib/Debug/EmptyProject.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Distr/SRC/RbFX/empty-projectBase/bin/Debug/EmptyProject.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Distr/SRC/RbFX/SDK/include" /external:I "D:/Distr/SRC/RbFX/SDK/include/Urho3D" /external:I "D:/Distr/SRC/RbFX/SDK/include/SDL" /external:I "D:/Distr/SRC/RbFX/SDK/include/STB" /external:I "D:/Distr/SRC/RbFX/SDK/include/Detour" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/backends" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/misc/cpp" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/misc/freetype" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGuizmo" /external:I "D:/Distr/SRC/RbFX/SDK/include/nativefiledialog" /external:I "D:/Distr/SRC/RbFX/SDK/include/tracy" /external:I "D:/Distr/SRC/RbFX/SDK/include/Urho3D/CSharp/Swig" /external:I "D:/Distr/SRC/RbFX/SDK/include/Bullet"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_COPY_DATA_DIRS;URHO3D_CSHARP;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_MONOLITHIC_HEADER;URHO3D_NAVIGATION;URHO3D_NETFX_RUNTIME_VERSION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PRISTINE_FULL_BUILDS;URHO3D_PROFILING;URHO3D_PROFILING_FALLBACK;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_TESTING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;_CHAR16T=1;EA_DLL=1;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE="RmlUi/Config/RbfxConfig.h";ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_DELAYED_INIT;TRACY_MANUAL_LIFETIME;TRACY_IMPORTS;URHO3D_SSE;PLATFORM_WIN32=1;BT_USE_SSE=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_COPY_DATA_DIRS;URHO3D_CSHARP;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_MONOLITHIC_HEADER;URHO3D_NAVIGATION;URHO3D_NETFX_RUNTIME_VERSION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PRISTINE_FULL_BUILDS;URHO3D_PROFILING;URHO3D_PROFILING_FALLBACK;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_TESTING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;_CHAR16T=1;EA_DLL=1;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE=\"RmlUi/Config/RbfxConfig.h\";ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_DELAYED_INIT;TRACY_MANUAL_LIFETIME;TRACY_IMPORTS;URHO3D_SSE;PLATFORM_WIN32=1;BT_USE_SSE=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;D:\Distr\SRC\RbFX\SDK\include;D:\Distr\SRC\RbFX\SDK\include\Urho3D;D:\Distr\SRC\RbFX\SDK\include\SDL;D:\Distr\SRC\RbFX\SDK\include\STB;D:\Distr\SRC\RbFX\SDK\include\Detour;D:\Distr\SRC\RbFX\SDK\include\ImGui;D:\Distr\SRC\RbFX\SDK\include\ImGui\backends;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\cpp;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\freetype;D:\Distr\SRC\RbFX\SDK\include\ImGuizmo;D:\Distr\SRC\RbFX\SDK\include\nativefiledialog;D:\Distr\SRC\RbFX\SDK\include\tracy;D:\Distr\SRC\RbFX\SDK\include\Urho3D\CSharp\Swig;D:\Distr\SRC\RbFX\SDK\include\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;D:\Distr\SRC\RbFX\SDK\include;D:\Distr\SRC\RbFX\SDK\include\Urho3D;D:\Distr\SRC\RbFX\SDK\include\SDL;D:\Distr\SRC\RbFX\SDK\include\STB;D:\Distr\SRC\RbFX\SDK\include\Detour;D:\Distr\SRC\RbFX\SDK\include\ImGui;D:\Distr\SRC\RbFX\SDK\include\ImGui\backends;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\cpp;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\freetype;D:\Distr\SRC\RbFX\SDK\include\ImGuizmo;D:\Distr\SRC\RbFX\SDK\include\nativefiledialog;D:\Distr\SRC\RbFX\SDK\include\tracy;D:\Distr\SRC\RbFX\SDK\include\Urho3D\CSharp\Swig;D:\Distr\SRC\RbFX\SDK\include\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Release\Plugin.Core.SamplePlugin.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\Urho3D.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\openxr_loaderd.lib;advapi32.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\Bullet.lib;user32.lib;gdi32.lib;imm32.lib;version.lib;winmm.lib;setupapi.lib;ws2_32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Distr/SRC/RbFX/empty-projectBase/lib/Release/EmptyProject.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Distr/SRC/RbFX/empty-projectBase/bin/Release/EmptyProject.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Distr/SRC/RbFX/SDK/include" /external:I "D:/Distr/SRC/RbFX/SDK/include/Urho3D" /external:I "D:/Distr/SRC/RbFX/SDK/include/SDL" /external:I "D:/Distr/SRC/RbFX/SDK/include/STB" /external:I "D:/Distr/SRC/RbFX/SDK/include/Detour" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/backends" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/misc/cpp" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/misc/freetype" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGuizmo" /external:I "D:/Distr/SRC/RbFX/SDK/include/nativefiledialog" /external:I "D:/Distr/SRC/RbFX/SDK/include/tracy" /external:I "D:/Distr/SRC/RbFX/SDK/include/Urho3D/CSharp/Swig" /external:I "D:/Distr/SRC/RbFX/SDK/include/Bullet"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_COPY_DATA_DIRS;URHO3D_CSHARP;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_MONOLITHIC_HEADER;URHO3D_NAVIGATION;URHO3D_NETFX_RUNTIME_VERSION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PRISTINE_FULL_BUILDS;URHO3D_PROFILING;URHO3D_PROFILING_FALLBACK;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_TESTING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;_CHAR16T=1;EA_DLL=1;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE="RmlUi/Config/RbfxConfig.h";ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_DELAYED_INIT;TRACY_MANUAL_LIFETIME;TRACY_IMPORTS;URHO3D_SSE;PLATFORM_WIN32=1;BT_USE_SSE=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_COPY_DATA_DIRS;URHO3D_CSHARP;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_MONOLITHIC_HEADER;URHO3D_NAVIGATION;URHO3D_NETFX_RUNTIME_VERSION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PRISTINE_FULL_BUILDS;URHO3D_PROFILING;URHO3D_PROFILING_FALLBACK;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_TESTING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;_CHAR16T=1;EA_DLL=1;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE=\"RmlUi/Config/RbfxConfig.h\";ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_DELAYED_INIT;TRACY_MANUAL_LIFETIME;TRACY_IMPORTS;URHO3D_SSE;PLATFORM_WIN32=1;BT_USE_SSE=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;D:\Distr\SRC\RbFX\SDK\include;D:\Distr\SRC\RbFX\SDK\include\Urho3D;D:\Distr\SRC\RbFX\SDK\include\SDL;D:\Distr\SRC\RbFX\SDK\include\STB;D:\Distr\SRC\RbFX\SDK\include\Detour;D:\Distr\SRC\RbFX\SDK\include\ImGui;D:\Distr\SRC\RbFX\SDK\include\ImGui\backends;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\cpp;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\freetype;D:\Distr\SRC\RbFX\SDK\include\ImGuizmo;D:\Distr\SRC\RbFX\SDK\include\nativefiledialog;D:\Distr\SRC\RbFX\SDK\include\tracy;D:\Distr\SRC\RbFX\SDK\include\Urho3D\CSharp\Swig;D:\Distr\SRC\RbFX\SDK\include\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;D:\Distr\SRC\RbFX\SDK\include;D:\Distr\SRC\RbFX\SDK\include\Urho3D;D:\Distr\SRC\RbFX\SDK\include\SDL;D:\Distr\SRC\RbFX\SDK\include\STB;D:\Distr\SRC\RbFX\SDK\include\Detour;D:\Distr\SRC\RbFX\SDK\include\ImGui;D:\Distr\SRC\RbFX\SDK\include\ImGui\backends;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\cpp;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\freetype;D:\Distr\SRC\RbFX\SDK\include\ImGuizmo;D:\Distr\SRC\RbFX\SDK\include\nativefiledialog;D:\Distr\SRC\RbFX\SDK\include\tracy;D:\Distr\SRC\RbFX\SDK\include\Urho3D\CSharp\Swig;D:\Distr\SRC\RbFX\SDK\include\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\MinSizeRel\Plugin.Core.SamplePlugin.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\Urho3D.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\openxr_loaderd.lib;advapi32.lib;D:\Distr\SRC\RbFX\SDK\lib\Debug\Bullet.lib;user32.lib;gdi32.lib;imm32.lib;version.lib;winmm.lib;setupapi.lib;ws2_32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Distr/SRC/RbFX/empty-projectBase/lib/MinSizeRel/EmptyProject.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Distr/SRC/RbFX/empty-projectBase/bin/MinSizeRel/EmptyProject.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Distr/SRC/RbFX/SDK/include" /external:I "D:/Distr/SRC/RbFX/SDK/include/Urho3D" /external:I "D:/Distr/SRC/RbFX/SDK/include/SDL" /external:I "D:/Distr/SRC/RbFX/SDK/include/STB" /external:I "D:/Distr/SRC/RbFX/SDK/include/Detour" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/backends" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/misc/cpp" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGui/misc/freetype" /external:I "D:/Distr/SRC/RbFX/SDK/include/ImGuizmo" /external:I "D:/Distr/SRC/RbFX/SDK/include/nativefiledialog" /external:I "D:/Distr/SRC/RbFX/SDK/include/tracy" /external:I "D:/Distr/SRC/RbFX/SDK/include/Urho3D/CSharp/Swig" /external:I "D:/Distr/SRC/RbFX/SDK/include/Bullet"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_COPY_DATA_DIRS;URHO3D_CSHARP;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_MONOLITHIC_HEADER;URHO3D_NAVIGATION;URHO3D_NETFX_RUNTIME_VERSION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PRISTINE_FULL_BUILDS;URHO3D_PROFILING;URHO3D_PROFILING_FALLBACK;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_TESTING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;_CHAR16T=1;EA_DLL=1;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE="RmlUi/Config/RbfxConfig.h";ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_DELAYED_INIT;TRACY_MANUAL_LIFETIME;TRACY_IMPORTS;URHO3D_SSE;PLATFORM_WIN32=1;BT_USE_SSE=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_COPY_DATA_DIRS;URHO3D_CSHARP;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_MONOLITHIC_HEADER;URHO3D_NAVIGATION;URHO3D_NETFX_RUNTIME_VERSION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PRISTINE_FULL_BUILDS;URHO3D_PROFILING;URHO3D_PROFILING_FALLBACK;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_TESTING;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;_CHAR16T=1;EA_DLL=1;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE=\"RmlUi/Config/RbfxConfig.h\";ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_DELAYED_INIT;TRACY_MANUAL_LIFETIME;TRACY_IMPORTS;URHO3D_SSE;PLATFORM_WIN32=1;BT_USE_SSE=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;D:\Distr\SRC\RbFX\SDK\include;D:\Distr\SRC\RbFX\SDK\include\Urho3D;D:\Distr\SRC\RbFX\SDK\include\SDL;D:\Distr\SRC\RbFX\SDK\include\STB;D:\Distr\SRC\RbFX\SDK\include\Detour;D:\Distr\SRC\RbFX\SDK\include\ImGui;D:\Distr\SRC\RbFX\SDK\include\ImGui\backends;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\cpp;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\freetype;D:\Distr\SRC\RbFX\SDK\include\ImGuizmo;D:\Distr\SRC\RbFX\SDK\include\nativefiledialog;D:\Distr\SRC\RbFX\SDK\include\tracy;D:\Distr\SRC\RbFX\SDK\include\Urho3D\CSharp\Swig;D:\Distr\SRC\RbFX\SDK\include\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Distr\SRC\RbFX\empty-project\Plugins;D:\Distr\SRC\RbFX\SDK\include;D:\Distr\SRC\RbFX\SDK\include\Urho3D;D:\Distr\SRC\RbFX\SDK\include\SDL;D:\Distr\SRC\RbFX\SDK\include\STB;D:\Distr\SRC\RbFX\SDK\include\Detour;D:\Distr\SRC\RbFX\SDK\include\ImGui;D:\Distr\SRC\RbFX\SDK\include\ImGui\backends;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\cpp;D:\Distr\SRC\RbFX\SDK\include\ImGui\misc\freetype;D:\Distr\SRC\RbFX\SDK\include\ImGuizmo;D:\Distr\SRC\RbFX\SDK\include\nativefiledialog;D:\Distr\SRC\RbFX\SDK\include\tracy;D:\Distr\SRC\RbFX\SDK\include\Urho3D\CSharp\Swig;D:\Distr\SRC\RbFX\SDK\include\Bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\RelWithDebInfo\Plugin.Core.SamplePlugin.lib;D:\Distr\SRC\RbFX\SDK\lib\RelWithDebInfo\Urho3D.lib;D:\Distr\SRC\RbFX\SDK\lib\RelWithDebInfo\openxr_loader.lib;advapi32.lib;D:\Distr\SRC\RbFX\SDK\lib\RelWithDebInfo\Bullet.lib;user32.lib;gdi32.lib;imm32.lib;version.lib;winmm.lib;setupapi.lib;ws2_32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Distr/SRC/RbFX/empty-projectBase/lib/RelWithDebInfo/EmptyProject.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Distr/SRC/RbFX/empty-projectBase/bin/RelWithDebInfo/EmptyProject.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Distr\SRC\RbFX\empty-project\Source\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Distr/SRC/RbFX/empty-project/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Distr/SRC/RbFX/empty-project -BD:/Distr/SRC/RbFX/empty-projectBase --check-stamp-file D:/Distr/SRC/RbFX/empty-projectBase/Source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Distr\SRC\RbFX\empty-projectBase\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Distr/SRC/RbFX/empty-project/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Distr/SRC/RbFX/empty-project -BD:/Distr/SRC/RbFX/empty-projectBase --check-stamp-file D:/Distr/SRC/RbFX/empty-projectBase/Source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Distr\SRC\RbFX\empty-projectBase\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Distr/SRC/RbFX/empty-project/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Distr/SRC/RbFX/empty-project -BD:/Distr/SRC/RbFX/empty-projectBase --check-stamp-file D:/Distr/SRC/RbFX/empty-projectBase/Source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Distr\SRC\RbFX\empty-projectBase\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Distr/SRC/RbFX/empty-project/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Distr/SRC/RbFX/empty-project -BD:/Distr/SRC/RbFX/empty-projectBase --check-stamp-file D:/Distr/SRC/RbFX/empty-projectBase/Source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Distr\SRC\RbFX\empty-projectBase\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Distr\SRC\RbFX\empty-project\Source\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Distr\SRC\RbFX\empty-projectBase\ZERO_CHECK.vcxproj">
+      <Project>{6C8454C2-5B69-3941-A3B1-20D41348B311}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Distr\SRC\RbFX\empty-projectBase\Plugins\Core.SamplePlugin\Plugin.Core.SamplePlugin.vcxproj">
+      <Project>{3865DB53-CAD3-335E-BA5A-AE7D099448E5}</Project>
+      <Name>Plugin.Core.SamplePlugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

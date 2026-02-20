@@ -1,0 +1,10 @@
+^D:\DISTR\SRC\RBFX\EMPTY-PROJECTBASE\CMAKEFILES\1474100643109763618FE55475235CAD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Distr/SRC/RbFX/empty-project -BD:/Distr/SRC/RbFX/empty-projectBase --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Distr/SRC/RbFX/empty-projectBase/EmptyProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
